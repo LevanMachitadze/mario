@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 305px;
+  width: 500px;
+  border: 3px solid black;
+}
+
+.sun {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 5px;
+  left: 200px;
+  animation-name: sun;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+@keyframes sun {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.sky {
+  height: 120px;
+  background-color: skyblue;
+}
+.grass {
+  height: 90px;
+  background-color: green;
+}
+.road-first {
+  height: 45px;
+  background-color: gray;
+  border-top: 3px solid silver;
+  border-bottom: 3px dashed white;
+}
+.road-second {
+  height: 45px;
+  background-color: gray;
+}
+.mario {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 200px;
+  animation: mario;
+  animation-duration: 25s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.luigi {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 250px;
+  left: 500px;
+  animation: luigi;
+  animation-duration: 25s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes mario {
+  0% {
+    top: 200px;
+    left: 0px;
+  }
+  20% {
+    top: 190px;
+    left: 100px;
+  }
+  40% {
+    top: 195px;
+    left: 200px;
+  }
+  60% {
+    top: 200px;
+    left: 300px;
+  }
+  80% {
+    top: 190px;
+    left: 400px;
+  }
+  100% {
+    top: 200px;
+    left: 439px;
+  }
+}
+@keyframes luigi {
+  0% {
+    top: 250px;
+    left: 439px;
+  }
+  20% {
+    top: 235px;
+    left: 400px;
+  }
+  40% {
+    top: 245px;
+    left: 300px;
+  }
+  60% {
+    top: 250px;
+    left: 400px;
+  }
+  80% {
+    top: 235px;
+    left: 150px;
+  }
+  100% {
+    top: 250px;
+    left: 0px;
+  }
+}
+.clouds {
+  width: 60px;
+  height: 35px;
+  position: absolute;
+  top: 10px;
+  left: 439px;
+  animation: clouds;
+  animation-duration: 2s;
+  animation-direction: unset;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes clouds {
+  0% {
+    top: 10px;
+    left: 439px;
+  }
+  25% {
+    top: 45px;
+    left: 325px;
+  }
+  50% {
+    top: 15px;
+    left: 220px;
+  }
+  75% {
+    top: 25px;
+    left: 105px;
+  }
+  100% {
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.tree {
+  width: 50px;
+  height: 60px;
+  position: absolute;
+  top: 115px;
+  left: 439px;
+  animation: tree;
+  animation-duration: 0.4s;
+  animation-direction: unset;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes tree {
+  0% {
+    top: 115px;
+    left: 439px;
+  }
+  25% {
+    top: 115px;
+    left: 325px;
+  }
+  50% {
+    top: 115px;
+    left: 220px;
+  }
+  75% {
+    top: 115px;
+    left: 105px;
+  }
+  100% {
+    top: 115px;
+    left: 10px;
+  }
+}
